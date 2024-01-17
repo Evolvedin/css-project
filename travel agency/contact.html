@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Canadian Adventures Travel Agency</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Canadian Adventures</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 class="form-title">Contact us</h1>
+            <form action="http://example.com/submit_form">
+              <div class="main-user-info">
+                <div class="user-input-box">
+                    <label for="fname">First Name</label>
+                    <input type="text"
+                            id="fname"
+                            name="fname"
+                            placeholder="Enter First Name"
+                            autofocus required/>
+                        
+                </div>
+                <div class="user-input-box">
+                  <label for="lname">Last name</label>
+                  <input type="text"
+                          id="lname"
+                          name="lname"
+                          placeholder="Enter Last Name"
+                          autofocus required/>
+                </div>
+                <div class="user-input-box">
+                  <label for="email">Email</label>
+                  <input type="email"
+                          id="email"
+                          name="email"
+                          placeholder="example@gmail.com"
+                          required/>
+                </div>
+                <div class="user-input-box">
+                  <label for="phoneNumber">Phone Number (US):</label>
+                  <input type="text" id="phoneNumber" name="phoneNumber" pattern="\(\d{3}\) \d{3}-\d{4}" placeholder="(123) 456-7890" required>
+                  
+                
+                </div>
+                <div class="user-input-box">
+                    <label for="description">Your Message</label>
+                        <textarea rows="5" cols="50" id="description" name="description" placeholder="Enter your message"></textarea>
+                    
+                </div>
+                
+                
+        
+              </div>
+              <div class="ab">
+              <div class="gender-details-box">
+                <span class="gender-title">Gender</span>
+                <div class="gender-category">
+                  <input type="radio" name="gender" id="male">
+                  <label for="male">Male</label>
+                  <input type="radio" name="gender" id="female">
+                  <label for="female">Female</label>
+                  <input type="radio" name="gender" id="other">
+                  <label for="other">Other</label>
+                </div>
+              </div>
+              <!-- language -->
+              <div class="language">
+                  <span class="language-title">Languages known</span>
+                  <div class="language-category">
+                  
+                    <input type="checkbox" id="eng" name="languages" value="english">
+                    <label for="eng">English</label>
+                    <input type="checkbox" id="fr" name="languages" value="french">
+                    <label for="french">French</label>
+                    <input type="checkbox" id="other" name="languages" value="other">
+                    <label for="javascript">Other</label>
+                  </div>
+              </div>
+              </div>
+              <div class="form-submit-btn">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+          </div>
+    </main>
+
+    <footer>
+        <p>© 2023 Canadian Adventures Travel Agency</p>
+    </footer>
+    <script>
+        // Modify form method to GET
+        document.querySelector('form').method = 'get';
+        // Uncomment the line below to test POST method
+        // document.querySelector('form').method = 'post';
+    </script>
+</body>
+
+</html>
